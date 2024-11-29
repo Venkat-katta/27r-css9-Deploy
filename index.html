@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .cd img{
+            height: 250px;
+            width: 200px;
+          }
+       
+        @media  screen and (orientation: landscape) {
+            body{
+                background-color: aqua;
+            }
+            .div1{
+                border: 3px,solid red;
+                padding: 25px;
+              
+                background-color: chocolate;
+            }
+        }
+        @media  screen and (orientation: portrait) {
+            body{
+                background-color: chartreuse;
+            }
+            .div1{
+                border: 3px,solid blue;
+                padding: 25px;
+                background-color: deeppink;
+            }
+        }
+    
+    
+    .div1{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: space-between;
+     }
+     @media screen and (min-width:0px) and (max-width:470px){
+         
+         .div1{
+             display: flex;
+             padding: 25px;
+             justify-content: center;
+         }
+        }
+    .p{
+        background-color: rgb(241, 35, 16);
+       
+     }
+     .div1 div{
+        border: 2px,solid black;
+     }
+     .p1{
+        overflow-y: scroll;
+        height: 60px;
+        width: 200px;
+        background-color: cadetblue;
+     }
+     ::-webkit-scrollbar{
+        display: none;
+     }
+     
+     
+    </style>
+</head>
+<body>
+    <div class="div1">
+    
+        <div>
+            <div class="cd"><img src="./img-1.webp" /></div>
+       
+        
+       <div class="p1"><p>A village chief's son secretly continues his father's mission to end smuggling, while pretending to be weak and maintaining the illusion that his father is still alive.</p>
+        </div>
+      <div class="p"><p>Devara</p></div>
+    </div>
+    
+     <div>
+        <div class="cd">
+        <img src="./img-2.avif" /></div>
+       <div class="p1"> <p>The Raja Saab is an upcoming Indian Telugu-language romantic comedy horror film written and directed by Maruthi. It is produced by People Media Factory. The film stars Prabhas in the titular role, alongside Nidhhi Agerwal, and Malavika Mohanan in the lead roles</p>
+        </div>
+        <div class="p">
+        <p>Raja Saab</p>
+        </div>
+    </div>
+    
+     <div>
+        <div class="cd">
+        <img src="./img-3.jpg" />
+        </div>
+        <div class="p1">
+        <p >The clash is on as Pushpa and Bhanwar Singh continue their rivalry in this epic conclusion to the two-parted action drama.</p>
+        </div>
+        <div class="p">
+        <p>Pushpa 2</p>
+        </div>
+    </div>
+    
+   
+    </div>
+</body>
+</html>
